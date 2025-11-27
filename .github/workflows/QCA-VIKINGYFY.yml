@@ -1,5 +1,5 @@
 #CI项目
-name: QCA-ImmotalWRT
+name: QCA-VIKINGYFY
 
 #CI计划
 on:
@@ -39,8 +39,8 @@ jobs:
         # BRANCH: [k6.12-nss]
 
 #immortalwrt
-        SOURCE: [immortalwrt/immortalwrt]
-        BRANCH: [openwrt-24.10]        
+        SOURCE: [VIKINGYFY/immortalwrt]
+        BRANCH: [main]        
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
@@ -71,5 +71,3 @@ jobs:
       WRT_TEST: ${{inputs.TEST}}
 
       CI_NAME: ${{github.workflow}}
-
-
